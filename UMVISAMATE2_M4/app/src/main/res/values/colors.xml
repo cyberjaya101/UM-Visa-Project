@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="visa_dark">#1E293B</color>     <color name="um_blue">#1E3A8A</color>       <color name="visa_bg_light">#F8FAFC</color> <color name="text_muted">#64748B</color>     <color name="nav_active">#2563EB</color>
+
+    <color name="status_approved">#10B981</color>
+    <color name="status_rejected">#EF4444</color>
+    <color name="primary_deep_blue">#163269</color> <color name="primary_gold">#DEB406</color>     <color name="bg_white">#FFFFFF</color>         <color name="bg_light_gray">#F3F4F5</color>    <color name="interactive_blue">#4A7FBA</color> <color name="success_green">#008000</color>    <color name="warning_red">#CC0000</color>      <color name="notification_yellow">#FFCB05</color> </resources>

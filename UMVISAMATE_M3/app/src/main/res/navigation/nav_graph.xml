@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardPendingFragment">
+
+    <fragment
+        android:id="@+id/dashboardPendingFragment"
+        android:name="com.example.umvisamate_m4.DashboardPendingFragment"
+        android:label="Dashboard Pending"
+        tools:layout="@layout/fragment_dashboard_pending">
+        <action
+            android:id="@+id/action_pending_to_payment"
+            app:destination="@id/paymentFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.example.umvisamate_m4.PaymentFragment"
+        android:label="Payment"
+        tools:layout="@layout/fragment_payment">
+        <action
+            android:id="@+id/action_payment_to_receipt"
+            app:destination="@id/receiptFragment"
+            app:popUpTo="@id/dashboardPendingFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/receiptFragment"
+        android:name="com.example.umvisamate_m4.ReceiptFragment"
+        android:label="Receipt"
+        tools:layout="@layout/fragment_receipt">
+        <action
+            android:id="@+id/action_receipt_to_paid"
+            app:destination="@id/dashboardPaidFragment"
+            app:popUpTo="@id/receiptFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/dashboardPaidFragment"
+        android:name="com.example.umvisamate_m4.DashboardPaidFragment"
+        android:label="Dashboard Paid"
+        tools:layout="@layout/fragment_dashboard_paid" />
+
+</navigation>

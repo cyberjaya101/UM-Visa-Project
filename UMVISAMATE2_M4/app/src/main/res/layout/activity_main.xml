@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFC">
+
+    <RelativeLayout
+        android:id="@+id/global_header"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#FFFFFF"
+        android:paddingHorizontal="16dp"
+        android:elevation="2dp">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:background="@drawable/rounded_blue_bg"
+            android:padding="8dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/logo"
+            android:layout_marginStart="12dp"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VISA Mate"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#001F3F"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UNIVERSITI MALAYA"
+                android:textSize="10sp"
+                android:textColor="#94A3B8"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/notification_bell"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_toStartOf="@id/user_avatar"
+            android:layout_marginEnd="20dp"
+            android:layout_centerVertical="true"
+            android:src="@android:drawable/ic_popup_reminder"
+            app:tint="#475569"/>
+
+        <TextView
+            android:id="@+id/user_avatar"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/avatar_bg_styled"
+            android:gravity="center"
+            android:text="A"
+            android:textColor="#163269"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:elevation="4dp"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/global_header"
+        android:layout_above="@id/bottom_navigation" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        app:menu="@menu/bottom_nav_menu" />
+</RelativeLayout>

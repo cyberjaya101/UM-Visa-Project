@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="biscay_blue">#163269</color>
+    <color name="rebels_gold">#DEB406</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_gray">#F3F4F5</color>
+    <color name="steel_blue">#4A7FBA</color>
+    <color name="dark_green">#008000</color>
+    <color name="warning_red">#CC0000</color>
+    <color name="maize_yellow">#FFCB05</color>
+    <color name="light_green_bg">#E8F5E9</color>
+</resources>

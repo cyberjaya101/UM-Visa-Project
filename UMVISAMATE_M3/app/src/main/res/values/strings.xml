@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">UMVisaMate_M4</string>
+
+    <string name="title_payment_confirmation">Payment Confirmation</string>
+    <string name="status_payment_successful">Payment Successful</string>
+    <string name="msg_transaction_completed">Your transaction has been completed</string>
+    <string name="label_digital_receipt">Digital Receipt</string>
+    <string name="label_paid">PAID</string>
+    <string name="label_transaction_reference">Transaction Reference</string>
+    <string name="val_transaction_ref">UMMJ9TT620W4QM9X</string>
+    <string name="label_date_time">Date &amp; Time</string>
+    <string name="val_date_time">17 Dec 2025, 05:45 PM</string>
+    <string name="label_visa_renewal">Visa Renewal Fee</string>
+    <string name="val_visa_renewal">RM 90.00</string>
+    <string name="label_processing_fee">Processing Fee</string>
+    <string name="val_processing_fee">RM 50.00</string>
+    <string name="label_insurance_fee">Insurance Fee</string>
+    <string name="val_insurance_fee">RM 250.00</string>
+    <string name="label_total_paid">Total Paid</string>
+    <string name="val_total_amount">RM 390.00</string>
+    <string name="label_university_name">Universiti Malaya</string>
+    <string name="btn_back_dashboard">Back to Dashboard</string>
+
+    <string name="app_title">UM VISA Mate</string>
+    <string name="user_name">Ahmed Hassan</string>
+    <string name="user_id">Student ID: 17051234</string>
+    <string name="application_type">Visa Renewal Application</string>
+    <string name="document_checklist_title">Document Checklist</string>
+    <string name="document_checklist_subtitle">Required documents</string>
+    <string name="status_complete">Complete</string>
+    <string name="payment_title">Payment</string>
+    <string name="payment_due">RM 390.00 due</string>
+    <string name="status_pending">Pending</string>
+    <string name="btn_make_payment">Make Payment</string>
+    <string name="final_submission_title">Final Submission</string>
+    <string name="final_submission_subtitle">Submit to UM Visa Unit</string>
+    <string name="requirements_title">Requirements:</string>
+    <string name="requirement_doc_checklist">Complete document checklist</string>
+    <string name="requirement_payment">Complete payment</string>
+    <string name="btn_submit_visa">Submit to UM Visa Unit</string>
+</resources>

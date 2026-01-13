@@ -1,0 +1,77 @@
+# Built application files
+*.apk
+*.ap_
+*.aab
+
+# Files for the ART/JVM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+build/
+.gradle/
+.idea/
+.cxx/
+.externalNativeBuild/
+.navigation/
+.project/
+.settings/
+.vs/
+.vscode/
+
+# Local configuration files (sdk location, etc)
+local.properties
+
+# AVD folder
+.android/
+
+# Gradle files
+.gradle/
+
+# Keystore files
+*.jks
+*.keystore
+
+# External native build files
+.externalNativeBuild/
+
+# Android Studio and IntelliJ IDEA files
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# macOS files
+.DS_Store
+
+# Windows files
+thumbs.db
+
+# Log files
+*.log
+
+# Crashlytics
+crashlytics-build.properties
+
+# Google Services (e.g. Firebase) files
+google-services.json
+
+# User-specific files
+.user
+.lock
+
+# Kotlin Multiplatform Mobile
+.kmm/
+
+# Gradle wrapper
+gradlew
+gradlew.bat
+
+# AndroidX annotations
+.androidx/
+
+# Other generated files
+app/build/

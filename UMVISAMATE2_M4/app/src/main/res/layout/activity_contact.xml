@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8FAFC">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/contact_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FFFFFF"
+        app:title="Contact Support"
+        app:navigationIcon="?attr/homeAsUpIndicator" />
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp" app:cardCornerRadius="16dp" app:cardElevation="1dp" app:strokeWidth="0dp">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp">
+                    <ImageView android:id="@+id/c1" android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/circle_bg_light" android:padding="10dp" android:src="@android:drawable/ic_menu_call" app:tint="#2563EB"/>
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toEndOf="@id/c1" android:layout_marginStart="16dp" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="UM Visa Unit Hotline" android:textStyle="bold"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+60 3-7967 4645" android:textColor="#64748B"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp" app:cardCornerRadius="16dp" app:cardElevation="1dp" app:strokeWidth="0dp">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp">
+                    <ImageView android:id="@+id/c2" android:layout_width="40dp" android:layout_height="40dp" android:background="@drawable/circle_bg_light" android:padding="10dp" android:src="@android:drawable/ic_dialog_email" app:tint="#2563EB"/>
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toEndOf="@id/c2" android:layout_marginStart="16dp" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Email Support" android:textStyle="bold"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="visa@um.edu.my" android:textColor="#64748B"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Submit a Query" android:textSize="18sp" android:textStyle="bold" android:layout_marginBottom="16dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Your Message" app:cornerRadius="12dp">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/et_message" android:layout_width="match_parent" android:layout_height="150dp" android:gravity="top"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button android:id="@+id/btn_submit_query" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="20dp" android:text="SEND MESSAGE" android:backgroundTint="#003366" app:cornerRadius="12dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

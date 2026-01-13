@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.UMVISAMATE" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+        <item name="colorPrimary">@color/um_blue</item>
+        <item name="colorPrimaryVariant">@color/visa_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="Theme.UMVISAMATE" parent="Base.Theme.UMVISAMATE" />
+    <style name="CircleImage">
+        <item name="cornerSize">50%</item>
+    </style>
+</resources>
